@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mypopsy.floatingsearchview.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_github"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onGithubClick"
+        />
+
+    <com.mypopsy.widget.FloatingSearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:background="#90000000"
+        android:hint="@string/hint"
+        app:logo="@drawable/logo"
+        app:fsv_menu="@menu/search"
+        app:theme="@style/CustomFloatingSearchViewTheme"/>
+
+</android.support.design.widget.CoordinatorLayout>
